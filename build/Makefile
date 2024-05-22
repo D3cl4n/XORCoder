@@ -190,6 +190,30 @@ src/samples/hello_world.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample.dir/build.make CMakeFiles/sample.dir/src/samples/hello_world.cpp.s
 .PHONY : src/samples/hello_world.cpp.s
 
+src/types.obj: src/types.cpp.obj
+.PHONY : src/types.obj
+
+# target to build an object file
+src/types.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/types.cpp.obj
+.PHONY : src/types.cpp.obj
+
+src/types.i: src/types.cpp.i
+.PHONY : src/types.i
+
+# target to preprocess a source file
+src/types.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/types.cpp.i
+.PHONY : src/types.cpp.i
+
+src/types.s: src/types.cpp.s
+.PHONY : src/types.s
+
+# target to generate assembly for a file
+src/types.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/types.cpp.s
+.PHONY : src/types.cpp.s
+
 src/utils.obj: src/utils.cpp.obj
 .PHONY : src/utils.obj
 
@@ -230,6 +254,9 @@ help:
 	@echo "... src/samples/hello_world.obj"
 	@echo "... src/samples/hello_world.i"
 	@echo "... src/samples/hello_world.s"
+	@echo "... src/types.obj"
+	@echo "... src/types.i"
+	@echo "... src/types.s"
 	@echo "... src/utils.obj"
 	@echo "... src/utils.i"
 	@echo "... src/utils.s"

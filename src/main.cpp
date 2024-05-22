@@ -1,14 +1,24 @@
 #include <iostream>
 #include "utils.h"
+#include "types.h"
+
+bool file_io(IOUtils utils, const std::string file_path)
+{
+    IORet ret;
+    bool success = false;
+    std::cout << "[+] Performing file IO..." << std::endl;
+
+    utils.set_target_file(file_path);
+    ret = utils.read_file_bytes();
+}
 
 int main()
 {
-    std::cout << "Hello World" << std::endl;
-    IOUtils utils;
+    std::cout << "XOR Encrypter running..." << std::endl;
+    const std::string target = "C:\\Users\\cdecl\\Projects\\XORCoder\\build\\sample.exe";
 
-    std::string target = "C:\\Users\\cdecl\\Projects\\XORCoder\\build\\sample.exe";
-    utils.set_target_file(target);
-    std::cout << utils.get_target_file() << std::endl;
+    IOUtils utils;
+    bool success = file_io(utils, target);
 
     return 0;
 }

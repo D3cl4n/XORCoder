@@ -9,5 +9,5 @@ set(CMAKE_OBJCXX_STANDARD_REQUIRED True)
 include_directories(include)
 
 # source files
-add_executable(main src/main.cpp src/utils.cpp)
+add_executable(main src/main.cpp src/utils.cpp src/types.cpp)
 add_executable(sample src/samples/hello_world.cpp)

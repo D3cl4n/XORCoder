@@ -99,20 +99,37 @@ CMakeFiles/main.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/utils.cpp.s"
 	C:/MinGW/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/cdecl/Projects/XORCoder/src/utils.cpp -o CMakeFiles/main.dir/src/utils.cpp.s
 
+CMakeFiles/main.dir/src/types.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/types.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/src/types.cpp.obj: C:/Users/cdecl/Projects/XORCoder/src/types.cpp
+CMakeFiles/main.dir/src/types.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:/Users/cdecl/Projects/XORCoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/types.cpp.obj"
+	C:/MinGW/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/types.cpp.obj -MF CMakeFiles/main.dir/src/types.cpp.obj.d -o CMakeFiles/main.dir/src/types.cpp.obj -c C:/Users/cdecl/Projects/XORCoder/src/types.cpp
+
+CMakeFiles/main.dir/src/types.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/types.cpp.i"
+	C:/MinGW/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/cdecl/Projects/XORCoder/src/types.cpp > CMakeFiles/main.dir/src/types.cpp.i
+
+CMakeFiles/main.dir/src/types.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/types.cpp.s"
+	C:/MinGW/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/cdecl/Projects/XORCoder/src/types.cpp -o CMakeFiles/main.dir/src/types.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/main.cpp.obj" \
-"CMakeFiles/main.dir/src/utils.cpp.obj"
+"CMakeFiles/main.dir/src/utils.cpp.obj" \
+"CMakeFiles/main.dir/src/types.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main.exe: CMakeFiles/main.dir/src/main.cpp.obj
 main.exe: CMakeFiles/main.dir/src/utils.cpp.obj
+main.exe: CMakeFiles/main.dir/src/types.cpp.obj
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/linkLibs.rsp
 main.exe: CMakeFiles/main.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Users/cdecl/Projects/XORCoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:/Users/cdecl/Projects/XORCoder/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/main.dir/objects.a
 	C:/MinGW/bin/ar.exe qc CMakeFiles/main.dir/objects.a @CMakeFiles/main.dir/objects1.rsp
 	C:/MinGW/bin/c++.exe -Wl,--whole-archive CMakeFiles/main.dir/objects.a -Wl,--no-whole-archive -o main.exe -Wl,--out-implib,libmain.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/main.dir/linkLibs.rsp

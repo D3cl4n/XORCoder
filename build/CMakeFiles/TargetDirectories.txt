@@ -1,0 +1,4 @@
+C:/Users/cdecl/Projects/XORCoder/build/CMakeFiles/main.dir
+C:/Users/cdecl/Projects/XORCoder/build/CMakeFiles/sample.dir
+C:/Users/cdecl/Projects/XORCoder/build/CMakeFiles/edit_cache.dir
+C:/Users/cdecl/Projects/XORCoder/build/CMakeFiles/rebuild_cache.dir
